@@ -29,7 +29,7 @@ int VescUart::receiveUartMessage(uint8_t * payloadReceived) {
 	uint8_t messageReceived[256];
 	uint16_t lenPayload = 0;
 
-	uint32_t timeout = millis() + 100; // Defining the timestamp for timeout (100ms before timeout)
+	uint32_t timeout = millis() + 50; // Defining the timestamp for timeout (100ms before timeout)
 
 	while ( millis() < timeout && messageRead == false) {
 
